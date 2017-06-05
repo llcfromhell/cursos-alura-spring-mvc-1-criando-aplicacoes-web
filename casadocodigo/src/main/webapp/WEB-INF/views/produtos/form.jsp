@@ -15,7 +15,7 @@
 
 	<div class="container-fluid">
 
-		<form name="produtoForm" action="/casadocodigo/produtos" method="post">
+		<form name="produtoForm" action="/casadocodigo/produtos/post" method="post">
 			<div class="form-group">
 				<label>Título</label>			
 				<input type="text" name="titulo" class="form-control"/>
