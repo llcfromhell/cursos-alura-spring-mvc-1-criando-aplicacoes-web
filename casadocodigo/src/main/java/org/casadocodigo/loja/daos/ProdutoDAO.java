@@ -1,4 +1,7 @@
 package org.casadocodigo.loja.daos;
+import java.util.Collection;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -16,4 +19,10 @@ public class ProdutoDAO extends AbstractDAO{
     public void gravar(Produto produto){
         manager.persist(produto);
     }
+
+	@SuppressWarnings("unchecked")
+	public Collection<? extends Produto> listar() {
+		return manager.createQuery("select p from Produto p").getResultList();
+		
+	}
 }

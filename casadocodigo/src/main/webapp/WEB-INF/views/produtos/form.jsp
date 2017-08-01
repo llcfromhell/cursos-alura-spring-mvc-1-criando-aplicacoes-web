@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 	
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; UTF-8">
 <title>Insert title here</title>
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,18 +18,18 @@
 
 	<div class="container-fluid">
 
-		<form name="produtoForm" action="/casadocodigo/produtos/post" method="post">
+		<form name="produtoForm" action="/casadocodigo/produtos" method="post">
 			<div class="form-group">
-				<label>Título</label>			
+				<label>TÃ­tulo</label>			
 				<input type="text" name="titulo" class="form-control"/>
 			</div>
 			<div class="form-group">
-				<label>Descrição</label>			
+				<label>DescriÃ§Ã£o</label>			
 				<textarea name="descricao" class="form-control">
 				</textarea>
 			</div>
 			<div class="form-group">
-				<label>Páginas</label>			
+				<label>PÃ¡ginas</label>			
 				<input type="number" name="paginas" class="form-control"/>
 			</div>
 			
